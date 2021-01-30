@@ -45,7 +45,7 @@ int dfs(int turn, vector<int>& node, int depth = 0) // Am using dfs to go throug
 				if (outcome == turn)
 					return outcome; // getting the result.
 
-				//removing the two newly added piles.
+				//removing the two newly added piles to reset the status and open up to new options.
 				new_node.pop_back();
 				new_node.pop_back();
 			}
